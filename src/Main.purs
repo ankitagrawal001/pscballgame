@@ -58,7 +58,7 @@ type State =
 
 
 test1 :: State -> Boolean
-test1 state = foldl (||) false (zipWith (less1 state.x state.y 150 50) [state.x1,state.x2,state.x3, state.x4, state.x5,state.x6,state.x7,state.x8,state.x9] [100,150,200,250,300,350,400,450,500])
+test1 state = foldl (||) false (zipWith (less1 state.x state.y 250 50) [state.x1,state.x2,state.x3, state.x4, state.x5,state.x6,state.x7,state.x8,state.x9] [100,150,200,250,300,350,400,450,500])
 
 
 less1 x y x1 y1 bx1 by1 = (x>=bx1) && (x<=bx1+x1) && (y>=by1) && (y<=by1+y1)
@@ -133,7 +133,7 @@ a i j= imageView
       [
       id_ (""<>show i)
       ,height $ V 50
-      , width $ V 150
+      , width $ V 250
       , margin ((show j)<>","<>(show $ i*5)<>",0,0")
       , imageUrl "wood"
       ]
