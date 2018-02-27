@@ -51516,12 +51516,12 @@ var less1 = function (dictOrd) {
     };
 };
 var test1 = function (state) {
-    return Data_Foldable.foldl(Data_Foldable.foldableArray)(Data_HeytingAlgebra.disj(Data_HeytingAlgebra.heytingAlgebraBoolean))(false)(Data_Array.zipWith(less1(Data_Ord.ordInt)(Data_Semiring.semiringInt)(Data_Ord.ordInt)(Data_Semiring.semiringInt)(state.x)(state.y)(150)(50))([ state.x1, state.x2, state.x3, state.x4, state.x5, state.x6, state.x7, state.x8, state.x9 ])([ 100, 150, 200, 250, 300, 350, 400, 450, 500 ]));
+    return Data_Foldable.foldl(Data_Foldable.foldableArray)(Data_HeytingAlgebra.disj(Data_HeytingAlgebra.heytingAlgebraBoolean))(false)(Data_Array.zipWith(less1(Data_Ord.ordInt)(Data_Semiring.semiringInt)(Data_Ord.ordInt)(Data_Semiring.semiringInt)(state.x)(state.y)(250)(50))([ state.x1, state.x2, state.x3, state.x4, state.x5, state.x6, state.x7, state.x8, state.x9 ])([ 100, 150, 200, 250, 300, 350, 400, 450, 500 ]));
 };
 var a = function (dictShow) {
     return function (i) {
         return function (j) {
-            return PrestoDOM_Elements.imageView([ PrestoDOM_Properties.id_("" + Data_Show.show(Data_Show.showInt)(i)), PrestoDOM_Properties.height(new PrestoDOM_Types_DomAttributes.V(50)), PrestoDOM_Properties.width(new PrestoDOM_Types_DomAttributes.V(150)), PrestoDOM_Properties.margin(Data_Show.show(dictShow)(j) + ("," + (Data_Show.show(Data_Show.showInt)(i * 5 | 0) + ",0,0"))), PrestoDOM_Properties.imageUrl("wood") ]);
+            return PrestoDOM_Elements.imageView([ PrestoDOM_Properties.id_("" + Data_Show.show(Data_Show.showInt)(i)), PrestoDOM_Properties.height(new PrestoDOM_Types_DomAttributes.V(50)), PrestoDOM_Properties.width(new PrestoDOM_Types_DomAttributes.V(250)), PrestoDOM_Properties.margin(Data_Show.show(dictShow)(j) + ("," + (Data_Show.show(Data_Show.showInt)(i * 5 | 0) + ",0,0"))), PrestoDOM_Properties.imageUrl("wood") ]);
         };
     };
 };
