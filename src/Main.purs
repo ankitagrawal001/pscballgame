@@ -88,11 +88,11 @@ main = do
                 else
                    if keyLeft
                       then
-                          { keyHeld : keyLeft ,x : (oldState.x + 7)%1300,y :oldState.y ,x2:(oldState.x2+5)%1300,x1:(oldState.x1+2)%1300,x3:(oldState.x3+6)%1300,x4:(oldState.x4+4)%1300,x5:(oldState.x5+5)%1300,x6:(oldState.x6+6)%1300,x7:(oldState.x7+7)%1300,x8:(oldState.x8+6)%1300,x9:(oldState.x9+7)%1300,gameMsg:"Win the game by reaching to the other End",gameOn:false}
+                          { keyHeld : keyLeft ,x : (oldState.x + 5)%1300,y :oldState.y ,x2:(oldState.x2+2)%1300,x1:(oldState.x1+3)%1300,x3:(oldState.x3+2)%1300,x4:(oldState.x4+6)%1300,x5:(oldState.x5+2)%1300,x6:(oldState.x6+3)%1300,x7:(oldState.x7+1)%1300,x8:(oldState.x8+3)%1300,x9:(oldState.x9+4)%1300,gameMsg:"Win the game by reaching to the other End",gameOn:false}
                       else
                         if keyRight
                            then
-                             { keyHeld : keyRight ,x : (oldState.x - 7),y : oldState.y ,x2:(oldState.x2+5)%1300,x1:(oldState.x1+2)%1300,x3:(oldState.x3+6)%1300,x4:(oldState.x4+4)%1300,x5:(oldState.x5+5)%1300,x6:(oldState.x6+6)%1300,x7:(oldState.x7+7)%1300,x8:(oldState.x8+6)%1300,x9:(oldState.x9+7)%1300,gameMsg:"Win the game by reaching to the other End",gameOn:false  }
+                             { keyHeld : keyRight ,x : (oldState.x - 7),y : oldState.y ,x2:(oldState.x2+2)%1300,x1:(oldState.x1+3)%1300,x3:(oldState.x3+2)%1300,x4:(oldState.x4+6)%1300,x5:(oldState.x5+2)%1300,x6:(oldState.x6+3)%1300,x7:(oldState.x7+1)%1300,x8:(oldState.x8+3)%1300,x9:(oldState.x9+4)%1300,gameMsg:"Win the game by reaching to the other End",gameOn:false  }
                            else
                              if keyUp
                                 then
@@ -102,7 +102,7 @@ main = do
                                       then {keyHeld : keyDown,x : oldState.x ,y:(oldState.y+10)%675 ,x2:(oldState.x2+3)%1300,x1:(oldState.x1+2)%1300,x3:(oldState.x3+6)%1300,x4:(oldState.x4+5)%1300,x5:(oldState.x5+6)%1300,x6:(oldState.x6+6)%1300,x7:(oldState.x7+d)%1300,x8:(oldState.x8+d)%1300,x9:(oldState.x9+d)%1300,gameMsg:"Win the game by reaching to the other End",gameOn:false}
                                       else
 
-                                          {keyHeld :false,x : oldState.x ,y:oldState.y ,x2:(oldState.x2+5)%1300,x1:(oldState.x1+2)%1300,x3:(oldState.x3+6)%1300,x4:(oldState.x4+4)%1300,x5:(oldState.x5+5)%1300,x6:(oldState.x6+6)%1300,x7:(oldState.x7+7)%1300,x8:(oldState.x8+6)%1300,x9:(oldState.x9+7)%1300,gameMsg:"Win the game by reaching to the other End",gameOn:false}
+                                          {keyHeld :false,x : oldState.x ,y:oldState.y ,x2:(oldState.x2+2)%1300,x1:(oldState.x1+3)%1300,x3:(oldState.x3+2)%1300,x4:(oldState.x4+6)%1300,x5:(oldState.x5+2)%1300,x6:(oldState.x6+3)%1300,x7:(oldState.x7+1)%1300,x8:(oldState.x8+3)%1300,x9:(oldState.x9+4)%1300,gameMsg:"Win the game by reaching to the other End",gameOn:false}
 view :: forall w i. State
   -> PrestoDOM i w
 view state =
